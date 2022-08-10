@@ -10,13 +10,13 @@ var app = builder.Build();
 app.MapGet("/", () =>
 {
     app.Logger.LogInformation("Initial Home Get");
-    return "GET - Net 6 Running ... 18052022-v1.0.0 CI/CD in TRAVIS-CI v1.0.0 AFORO255 Pablo Montero Devops jenkins";
+    return "GET - Net 6 Running ... 18052022-v1.0.0 CI/CD in jenkins in job Pablo Montero Devops ";
 });
 
 app.MapPost("/", () =>
 {
     app.Logger.LogInformation("Initial Home Post");
-    return "POST - Net 6 Running ... 22042022-v1.0.0 CI/CD in AKS v1.0.0 AFORO255 Pablo Montero Devops jenkins";
+    return "POST - Net 6 Running ... 22042022-v1.0.0 CI/CD in jenkins in job Pablo Montero Devops";
 });
 
 app.Run();
